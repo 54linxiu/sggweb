@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<books>
+    <book sn = "qq111">
+        <name>三国演义</name>
+        <author>罗贯中</author>
+        <price>100</price>
+    </book>
+
+    <book sn = "qq112">
+        <name>水浒传</name>
+        <author>施耐庵</author>
+        <price>111</price>
+    </book>
+
+    <book sn = "qq113">
+        <name>红楼梦</name>
+        <author>曹雪芹</author>
+        <price>222</price>
+    </book>
+</books>

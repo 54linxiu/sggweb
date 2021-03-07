@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+        <context-param>
+        <param-name>user</param-name>
+        <param-value>tao</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>com.qht.test.HelloServlet</servlet-class>
+        <init-param>
+            <param-name>username</param-name>
+            <param-value>hantao</param-value>
+        </init-param>
+        
+        <init-param>
+            <param-name>url</param-name>
+            <param-value>http://localhost:8080/testservlet/</param-value>
+        </init-param>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/hai</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HelloServlet2</servlet-name>
+        <servlet-class>com.qht.test.HelloServlet2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HelloSrtblry3</servlet-name>
+        <servlet-class>com.qht.test.HelloSrtblry3</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Contextservlet</servlet-name>
+        <servlet-class>com.qht.test.Contextservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Contextservlet1</servlet-name>
+        <servlet-class>com.qht.test.Contextservlet1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Contextservlet2</servlet-name>
+        <servlet-class>com.qht.test.Contextservlet2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Contextservlet2</servlet-name>
+        <url-pattern>/context2</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Contextservlet</servlet-name>
+        <url-pattern>/hai4</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Contextservlet1</servlet-name>
+        <url-pattern>/context1</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HelloServlet2</servlet-name>
+        <url-pattern>/hai2</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HelloSrtblry3</servlet-name>
+        <url-pattern>/hai3</url-pattern>
+    </servlet-mapping>
+</web-app>
